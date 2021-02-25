@@ -15,5 +15,8 @@ https://github.com/snipsco/snips-nlu/tree/master/snips_nlu/dataset
 Attempts on ATIS Dataset
 https://colab.research.google.com/drive/1LKEIgOCdCc2Xa6cta-JqpXwMIXfGCRAZ#scrollTo=3cGwz38RASSr
 
-Naive Bayes
+Naive Bayes With Tokenized Words
 https://colab.research.google.com/drive/1nle12urPKoNuNBn-VExyrW8eTLYsf95e?usp=sharing
+
+Naive Bayes With BoW Vectors
+https://colab.research.google.com/drive/1u2VFb4U0hpzdAgFzcdyWb_hYP1pZX49Q?usp=sharing

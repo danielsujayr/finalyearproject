@@ -296,64 +296,6 @@ class InvestmentForm(FormAction):
         liabilities = all_slots['liabilities']
         credit_score = all_slots['credit_score']
 
-        if int(age)>=21 and int(age)<30:
-          riskage = 10;
-        if int(age)>=30 and int(age)<40:
-          riskage = 7;
-        if int(age)>=40 and int(age)<50:
-          riskage = 4;
-        if int(age)>=50 and int(age)<60:
-          riskage = 1;
-
-        if married == 'no':
-          riskmarried = 10;
-        if married == 'yes':
-          riskmarried = 5;
-
-        if int(no_of_child) == 0:
-           riskchild = 10;
-        if int(no_of_child) == 1:
-           riskchild = 7;
-        if int(no_of_child) == 2:
-           riskchild = 4;
-        if int(no_of_child) == 3:
-           riskchild = 1;
-
-        if int(yearly_earnings)>=3 and int(yearly_earnings)<10:
-           riskearning = 3;
-        if int(yearly_earnings)>=10 and int(yearly_earnings)<15:
-           riskearning = 5;
-        if int(yearly_earnings)>=15 and int(yearly_earnings)<25:
-           riskearning = 7;
-        if int(yearly_earnings)>=25 and int(yearly_earnings)<50:
-           riskearning = 9;
-        if int(yearly_earnings)>=50 and int(yearly_earnings)<100:
-           riskearning = 10;
-  
-        if int(liabilities)>=3 and int(liabilities)<10:
-           riskdebt = 10;
-        if int(liabilities)>=10 and int(liabilities)<15:
-           riskdebt = 9;
-        if int(liabilities)>=15 and int(liabilities)<25:
-           riskdebt = 7;
-        if int(liabilities)>=25 and int(liabilities)<50:
-           riskdebt = 5;
-        if int(liabilities)>=50 and int(liabilities)<100:
-           riskdebt = 3;
-
-
-        if int(credit_score)>300 and int(credit_score)<630:
-           riskcredit = 3;
-        if int(credit_score)>=630 and int(credit_score)<690:
-           riskcredit = 5;
-        if int(credit_score)>=690 and int(credit_score)<720:
-           riskcredit = 7;
-        if int(credit_score)>=720 and int(credit_score)<850:
-           riskcredit = 10;
-        
-
-        risk = riskage + riskmarried + riskchild + riskearning + riskdebt + riskcredit
-    
 
         res = """Details Collected:
         1. Age - {}

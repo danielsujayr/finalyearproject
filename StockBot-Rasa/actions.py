@@ -353,14 +353,7 @@ class InvestmentForm(FormAction):
         
 
         risk = riskage + riskmarried + riskchild + riskearning + riskdebt + riskcredit
-        if int(risk) > 50:
-          risk = "Gamestpop (GME)";
-        elif int(risk) > 40 and int(risk) < 50:
-          risk = "Futu Holdings (FUTU)";
-        elif int(risk) > 30 and int(risk) < 40:
-          risk = "Tesla (TSLA)";
-        else:
-          risk = "Apple (AAPL)";
+    
 
         res = """Details Collected:
         1. Age - {}

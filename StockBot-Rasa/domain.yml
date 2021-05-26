@@ -1,0 +1,107 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- stock_price
+- inquire
+- waste
+- investment_tips
+entities:
+- stock
+slots:
+  stock:
+    type: text
+  age:
+    type: text
+  married:
+    type: text
+  no_of_child:
+    type: text
+  yearly_earnings:
+    type: text
+  liabilities:
+    type: text
+  credit_score:
+    type: text
+responses:
+  utter_greet:
+  - text: Hey there! My name is Stocky.
+  utter_intro:
+  - text: I can fetch you prices of stocks and help you make the right investments.
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye.See you!!
+  - text: Good to see you!!
+  utter_iamabot:
+  - text: I am Stocky.
+  utter_ask_stock:
+  - text: Sure. Please provide the stock symbol so that I can fetch that information for you
+  utter_affirm:
+  - text: Done!!
+  - text: Great!!
+  utter_default:
+  - text: "Sorry can't understand.Please try again!!"
+  utter_provide_details:
+  - text: Please provide me some details so I can serve you better.
+  utter_ask_age:
+  - text: How old are you?
+  utter_wrong_age:
+  - text: Please enter valid age value
+  utter_ask_married:
+  - text: Are you currently married?
+  utter_wrong_married:
+  - text: Please enter YES/NO
+  utter_ask_no_of_child:
+  - text: How many children do you have?
+  utter_wrong_no_of_child:
+  - text: Please enter valid children number
+  utter_ask_yearly_earnings:
+  - text: How much do you earn on a yearly basis (in lakhs)?
+  utter_wrong_yearly_earnings:
+  - text: Please enter valid earnings value
+  utter_ask_liabilities:
+  - text: How much liability do you have (in lakhs)?
+  utter_wrong_liabilities:
+  - text: Please enter valid liabilities value
+  utter_ask_credit_score:
+  - text: What is your current credit score?
+  utter_wrong_credit_score:
+  - text: Please enter valid credit score value
+
+actions:
+- utter_greet
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- action_stock_price
+- utter_ask_stock
+- utter_affirm
+- utter_intro
+- utter_default
+- utter_ask_age
+- utter_wrong_age
+- utter_ask_married
+- utter_wrong_married
+- utter_ask_no_of_child
+- utter_wrong_no_of_child
+- utter_ask_yearly_earnings
+- utter_wrong_yearly_earnings
+- utter_ask_liabilities
+- utter_wrong_liabilities
+- utter_ask_credit_score
+- utter_wrong_credit_score
+
+forms:
+- stock_price_form
+- investment_form
